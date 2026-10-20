@@ -1,0 +1,15 @@
+{
+  "name": "preflight-missing-tools",
+  "description": "Missing gh is caught early with install instructions before any GitHub access",
+  "skills": ["work-on-issue"],
+  "query": "work on issue #42",
+  "setup_env": {
+    "hide_tools": ["gh"]
+  },
+  "expected_behavior": [
+    "Detects that gh is not installed or not available",
+    "Provides install instructions for gh",
+    "Does not attempt to fetch the issue or access GitHub",
+    "Stops and waits for the user to install the missing tool"
+  ]
+}
